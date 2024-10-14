@@ -1,0 +1,626 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+        <MENU></MENU>
+    </title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: lightblue;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+
+            background-image: url(pics/bac.jpg);
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+        }
+
+        .menu {
+            padding: 20px;
+        }
+
+        h1 {
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            color: rgb(255, 67, 67);
+            text-align: center;
+            font-size: 55px;
+            text-shadow: 1px 1px 2px black;
+        }
+
+        .menu-category {
+            margin: 20px 0;
+            border-radius: 5px;
+        }
+
+        summary {
+            font-weight: bolder;
+            background-color: wheat;
+            color: black;
+            padding: 20px;
+            font-size: 20px;
+            border-radius: 50px;
+            cursor: pointer;
+            text-align: center;
+            opacity: 60%;
+        }
+
+        summary:hover {
+            background-color: whitesmoke;
+        }
+
+
+        .card {
+            display: inline-block;
+            vertical-align: top;
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            width: 170px;
+            margin: 10px;
+            text-align: center;
+            opacity: 80%;
+        }
+
+        .image {
+            width: 120px;
+            height: 120px;
+            margin-right: 5px;
+        }
+
+        .item {
+            flex-grow: 1;
+        }
+
+        .rating {
+            color: #ffcc00;
+        }
+
+        .price {
+            font-size: 18px;
+            color: #28a745;
+        }
+
+        .item-quantity {
+            margin-left: auto;
+        }
+
+        .centre {
+            display: flex;
+            justify-content: center;
+            margin-top: 50px;
+
+        }
+
+        .center {
+            display: flex;
+            justify-content: center;
+            text-align: center;
+            margin-top: 10px;
+        }
+
+        .button {
+            text-align: center;
+            font-size: 30px;
+            font-weight: bolder;
+            background-color: black;
+            color: white;
+            width: 180px;
+            height: 38px;
+            border-radius: 12px;
+            display: inline-block;
+            padding: 10px 20px;
+            text-decoration: none;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>MENU CARD</h1>
+
+    <form class="menu">
+
+        <!--Cakes & Pastries-->
+        <details class="menu-category">
+            <summary>Cakes and Pastries</summary><br>
+            <summary>Cakes</summary>
+            <!--Cakes-->
+            <div class="card">
+                <img src="pics/cake.jpg" class="image">
+                <div class="item">
+                    <h3>Chocolate </h3>
+                    <p>Eggless 1Kg</p>
+                    <p class="rating">Rating: ★★★★★</p>
+                </div>
+                <div class="item-quantity">
+                    <p class="price">Rs.600.00</p>
+                    <label for="quantity1">Add to cart</label>
+                    <input type="checkbox">
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="pics/btsc.jpg" class="image">
+                <div class="item">
+                    <h3>Butterscotch </h3>
+                    <p>Eggless 1Kg</p>
+                    <p class="rating">Rating: ★★★★★</p>
+                </div>
+                <div class="item-quantity">
+                    <p class="price">Rs.500.00</p>
+                    <label for="quantity1">Add to cart</label>
+                    <input type="checkbox">
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="pics/rv.jpg" class="image">
+                <div class="item">
+                    <h3>Red Velvet </h3>
+                    <p>Heart Shape 500gms</p>
+                    <p class="rating">Rating: ★★★☆☆</p>
+                </div>
+                <div class="item-quantity">
+                    <p class="price">Rs.380.00</p>
+                    <label for="quantity1">Add to cart</label>
+                    <input type="checkbox">
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="pics/pa.jpg" class="image">
+                <div class="item">
+                    <h3>Pineapple</h3>
+                    <p>Fruit Toppings 1Kg</p>
+                    <p class="rating">Rating: ★★★★☆</p>
+                </div>
+                <div class="item-quantity">
+                    <p class="price">Rs.300.00</p>
+                    <label for="quantity1">Add to cart</label>
+                    <input type="checkbox">
+                </div>
+            </div>
+
+            <!--Pastries-->
+            <summary>Pastries</summary>
+            <div class="card">
+                <img src="pics/ch_p.jpg" class="image">
+                <div class="item">
+                    <h3>Chocolate </h3>
+                    <p>Eggless 1pc</p>
+                    <p class="rating">Rating: ★★★★☆</p>
+                </div>
+                <div class="item-quantity">
+                    <p class="price">Rs.50.00</p>
+                    <label for="quantity1">Add to cart</label>
+                    <input type="checkbox">
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="pics/bf_p.jpg" class="image">
+                <div class="item">
+                    <h3>Black Forest</h3>
+                    <p>Cold Cake 1pc</p>
+                    <p class="rating">Rating: ★★★★☆</p>
+                </div>
+                <div class="item-quantity">
+                    <p class="price">Rs.60.00</p>
+                    <label for="quantity1">Add to cart</label>
+                    <input type="checkbox">
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="pics/sb_p.jpg" class="image">
+                <div class="item">
+                    <h3>Strawberry</h3>
+                    <p>Velvetty 1pc</p>
+                    <p class="rating">Rating: ★★★★☆</p>
+                </div>
+                <div class="item-quantity">
+                    <p class="price">Rs.50.00</p>
+                    <label for="quantity1">Add to cart</label>
+                    <input type="checkbox">
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="pics/btsc_p.jpg" class="image">
+                <div class="item">
+                    <h3>Butterscotch</h3>
+                    <p>Eggless 1pc</p>
+                    <p class="rating">Rating: ★★★★☆</p>
+                </div>
+                <div class="item-quantity">
+                    <p class="price">Rs.65.00</p>
+                    <label for="quantity1">Add to cart</label>
+                    <input type="checkbox">
+                </div>
+            </div>
+        </details>
+
+        <!--Cookies & Candies-->
+        <details class="menu-category">
+            <summary>Cookies & Candies</summary><br>
+            <summary>Cookies</summary>
+            <!--Cookies-->
+            <div class="card">
+                <img src="pics/ccc.jpg" class="image">
+                <div class="item">
+                    <h3>Choco Chip</h3>
+                    <p>Freshly Baked 200gms</p>
+                    <p class="rating">Rating: ★★★★★</p>
+                </div>
+                <div class="item-quantity">
+                    <p class="price">Rs.120.00</p>
+                    <label for="quantity1">Add to cart</label>
+                    <input type="checkbox">
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="pics/cbs.jpg" class="image">
+                <div class="item">
+                    <h3>Cashew Butter</h3>
+                    <p>Sugar Coated 200gms</p>
+                    <p class="rating">Rating: ★★★★★</p>
+                </div>
+                <div class="item-quantity">
+                    <p class="price">Rs.200.00</p>
+                    <label for="quantity1">Add to cart</label>
+                    <input type="checkbox">
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="pics/omc.jpg" class="image">
+                <div class="item">
+                    <h3>Oatmeal Raisin</h3>
+                    <p>Baked 200gms</p>
+                    <p class="rating">Rating: ★★★★☆</p>
+                </div>
+                <div class="item-quantity">
+                    <p class="price">Rs.160.00</p>
+                    <label for="quantity1">Add to cart</label>
+                    <input type="checkbox">
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="pics/cocock.jpg" class="image">
+                <div class="item">
+                    <h3>Coconut Cookies</h3>
+                    <p>Grated 200gms</p>
+                    <p class="rating">Rating: ★★★★☆</p>
+                </div>
+                <div class="item-quantity">
+                    <p class="price">Rs.140.00</p>
+                    <label for="quantity1">Add to cart</label>
+                    <input type="checkbox">
+                </div>
+            </div>
+
+            <br>
+
+            <summary>Candies</summary>
+            <!--Candies-->
+            <div class="card">
+                <img src="pics/twix.jpg" class="image">
+                <div class="item">
+                    <h3>Twix Bar</h3>
+                    <p>Caramel 1pkt</p>
+                    <p class="rating">Rating: ★★★★☆</p>
+                </div>
+                <div class="item-quantity">
+                    <p class="price">Rs.160.00</p>
+                    <label for="quantity1">Add to cart</label>
+                    <input type="checkbox">
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="pics/fuse.jpg" class="image">
+                <div class="item">
+                    <h3>Fuse </h3>
+                    <p>Peanuts filled 1pkt</p>
+                    <p class="rating">Rating: ★★★★☆</p>
+                </div>
+                <div class="item-quantity">
+                    <p class="price">Rs.250.00</p>
+                    <label for="quantity1">Add to cart</label>
+                    <input type="checkbox">
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="pics/kk.jpg" class="image">
+                <div class="item">
+                    <h3>KIT KAT</h3>
+                    <p>CrunchyNMunchy 1pkt</p>
+                    <p class="rating">Rating: ★★★★☆</p>
+                </div>
+                <div class="item-quantity">
+                    <p class="price">Rs.150.00</p>
+                    <label for="quantity1">Add to cart</label>
+                    <input type="checkbox">
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="pics/dmsfn.jpg" class="image">
+                <div class="item">
+                    <h3>Dairy Milk</h3>
+                    <p>Fruit N Nut 1pkt</p>
+                    <p class="rating">Rating: ★★★★☆</p>
+                </div>
+                <div class="item-quantity">
+                    <p class="price">Rs.210.00</p>
+                    <label for="quantity1">Add to cart</label>
+                    <input type="checkbox">
+                </div>
+            </div>
+        </details>
+
+        <!--Beverages-->
+        <details class="menu-category">
+            <summary>Beverages</summary><br>
+            <summary>Milkshakes</summary>
+            <!--Milkshakes-->
+            <div class="card">
+                <img src="pics/cnms.jpg" class="image">
+                <div class="item">
+                    <h3>Choco Nutella</h3>
+                    <p>Hot N Thick 1cup</p>
+                    <p class="rating">Rating: ★★★★★</p>
+                </div>
+                <div class="item-quantity">
+                    <p class="price">Rs.100.00</p>
+                    <label for="quantity1">Add to cart</label>
+                    <input type="checkbox">
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="pics/dfms.jpg" class="image">
+                <div class="item">
+                    <h3>Dry Fruit Punch</h3>
+                    <p>Crunchy Nuts 1cup</p>
+                    <p class="rating">Rating: ★★★★☆</p>
+                </div>
+                <div class="item-quantity">
+                    <p class="price">Rs.120.00</p>
+                    <label for="quantity1">Add to cart</label>
+                    <input type="checkbox">
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="pics/bms.jpg" class="image">
+                <div class="item">
+                    <h3>Choco Brownie</h3>
+                    <p>Sizziling 1cup</p>
+                    <p class="rating">Rating: ★★★★★</p>
+                </div>
+                <div class="item-quantity">
+                    <p class="price">Rs.120.00</p>
+                    <label for="quantity1">Add to cart</label>
+                    <input type="checkbox">
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="pics/vms.jpg" class="image">
+                <div class="item">
+                    <h3>Vanilla Shake</h3>
+                    <p>Cold N Sweet 1cup</p>
+                    <p class="rating">Rating: ★★★★☆</p>
+                </div>
+                <div class="item-quantity">
+                    <p class="price">Rs.100.00</p>
+                    <label for="quantity1">Add to cart</label>
+                    <input type="checkbox">
+                </div>
+            </div>
+
+            <summary>Drinks</summary>
+            <!--Drinks-->
+            <div class="card">
+                <img src="pics/ccf.jpg" class="image">
+                <div class="item">
+                    <h3>Cold Coffee</h3>
+                    <p>Iced 1cup</p>
+                    <p class="rating">Rating: ★★★★☆</p>
+                </div>
+                <div class="item-quantity">
+                    <p class="price">Rs.80.00</p>
+                    <label for="quantity1">Add to cart</label>
+                    <input type="checkbox">
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="pics/tea.jpg" class="image">
+                <div class="item">
+                    <h3>Tea</h3>
+                    <p>Indian style 1cup</p>
+                    <p class="rating">Rating: ★★★★☆</p>
+                </div>
+                <div class="item-quantity">
+                    <p class="price">Rs.40.00</p>
+                    <label for="quantity1">Add to cart</label>
+                    <input type="checkbox">
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="pics/coke.jpg" class="image">
+                <div class="item">
+                    <h3>Coke</h3>
+                    <p>Zero Sugar 1ltr</p>
+                    <p class="rating">Rating: ★★★★☆</p>
+                </div>
+                <div class="item-quantity">
+                    <p class="price">Rs.60.00</p>
+                    <label for="quantity1">Add to cart</label>
+                    <input type="checkbox">
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="pics/spte.jpg" class="image">
+                <div class="item">
+                    <h3>Sprite</h3>
+                    <p> lemon-lime 1Ltr</p>
+                    <p class="rating">Rating: ★★★★☆</p>
+                </div>
+                <div class="item-quantity">
+                    <p class="price">Rs.60.00</p>
+                    <label for="quantity1">Add to cart</label>
+                    <input type="checkbox">
+                </div>
+            </div>
+        </details>
+
+        <!--Snacks-->
+        <details class="menu-category">
+            <summary>Snacks</summary><br>
+            <summary>Burgers & Pizzas</summary>
+            <!--Burgers & Pizzas-->
+            <div class="card">
+                <img src="pics/vegb.jpg" class="image">
+                <div class="item">
+                    <h3>Veg Burger</h3>
+                    <p>Fresh n Soft </p>
+                    <p class="rating">Rating: ★★★★☆</p>
+                </div>
+                <div class="item-quantity">
+                    <p class="price">Rs.150.00</p>
+                    <label for="quantity1">Add to cart</label>
+                    <input type="checkbox">
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="pics/ckbur.jpg" class="image">
+                <div class="item">
+                    <h3>Spl Chicken Burger</h3>
+                    <p>Chicken 65</p>
+                    <p class="rating">Rating: ★★★★☆</p>
+                </div>
+                <div class="item-quantity">
+                    <p class="price">Rs.190.00</p>
+                    <label for="quantity1">Add to cart</label>
+                    <input type="checkbox">
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="pics/marpiz.jpg" class="image">
+                <div class="item">
+                    <h3>Margherita Pizza</h3>
+                    <p>Chessy medium</p>
+                    <p class="rating">Rating: ★★★★☆</p>
+                </div>
+                <div class="item-quantity">
+                    <p class="price">Rs.400.00</p>
+                    <label for="quantity1">Add to cart</label>
+                    <input type="checkbox">
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="pics/chkpiz.jpg" class="image">
+                <div class="item">
+                    <h3>Chicken Pizza</h3>
+                    <p>Toppings(optional) medium</p>
+                    <p class="rating">Rating: ★★★★☆</p>
+                </div>
+                <div class="item-quantity">
+                    <p class="price">Rs.550.00</p>
+                    <label for="quantity1">Add to cart</label>
+                    <input type="checkbox">
+                </div>
+            </div>
+
+            <br>
+
+            <summary>Fries & Puffs</summary>
+            <!--Fries & Puffs-->
+            <div class="card">
+                <img src="pics/chips.jpg" class="image">
+                <div class="item">
+                    <h3>Potato Chips</h3>
+                    <p>Baked 500gms</p>
+                    <p class="rating">Rating: ★★★☆☆</p>
+                </div>
+                <div class="item-quantity">
+                    <p class="price">Rs.120.00</p>
+                    <label for="quantity1">Add to cart</label>
+                    <input type="checkbox">
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="pics/ffs.jpg" class="image">
+                <div class="item">
+                    <h3>French Fries</h3>
+                    <p>Crispy medium</p>
+                    <p class="rating">Rating: ★★★★☆</p>
+                </div>
+                <div class="item-quantity">
+                    <p class="price">Rs.100.00</p>
+                    <label for="quantity1">Add to cart</label>
+                    <input type="checkbox">
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="pics/vegpf.jpg" class="image">
+                <div class="item">
+                    <h3>Veg Puff</h3>
+                    <p>Hot Baked 1pc</p>
+                    <p class="rating">Rating: ★★★★☆</p>
+                </div>
+                <div class="item-quantity">
+                    <p class="price">Rs.50.00</p>
+                    <label for="quantity1">Add to cart</label>
+                    <input type="checkbox">
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="pics/eggpf.jpg" class="image">
+                <div class="item">
+                    <h3>Egg Puff</h3>
+                    <p>Hot Baked</p>
+                    <p class="rating">Rating: ★★★★☆</p>
+                </div>
+                <div class="item-quantity">
+                    <p class="price">Rs.700.00</p>
+                    <label for="quantity1">Add to cart</label>
+                    <input type="checkbox">
+                </div>
+            </div>
+        </details>
+
+        <div class="centre">
+            <a href="cart.html" class="button">CART</a>
+        </div>
+
+        <div class="center">
+            <p>
+                Want to go back?
+                <a href="home.html">HOME</a>
+            </p>
+        </div>
+    </form>
+</body>
+
+</html>

@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MY CART</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f8f8f8;
+            margin: 40px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 220vh;
+
+            background-image: url(pics/bac.jpg);
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+        }
+
+        h1 {
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            color: rgb(255, 67, 67);
+            text-align: center;
+            font-size: 55px;
+            text-shadow: 1px 1px 2px black
+        }
+
+        .cart {
+            display: flex;
+            align-items: center;
+            background-color: #ffffffdd;
+            border: 3px solid #ddd;
+            padding: 15px;
+            margin-bottom: 10px;
+            border-radius: 7px;
+        }
+
+        .image {
+            width: 120px;
+            height: 120px;
+            margin-right: 15px;
+        }
+
+        .item {
+            flex-grow: 1;
+        }
+
+        .rating {
+            color: #ffcc00;
+        }
+
+        .total {
+            color: red;
+        }
+
+        .price {
+            font-size: 18px;
+            color: #28a745;
+        }
+
+        .item-quantity {
+            margin-left: auto;
+        }
+
+        form {
+            color: black;
+            font-size: 20px;
+            width: 880px;
+            height: 1450px;
+        }
+
+        .button {
+            text-align: center;
+            font-size: 30px;
+            font-weight: bolder;
+            background-color: black;
+            color: white;
+            width: 180px;
+            height: 38px;
+            border-radius: 12px;
+            display: inline-block;
+            padding: 10px 20px;
+            text-decoration: none;
+        }
+
+        .centre {
+            display: flex;
+            justify-content: center;
+            margin-top: 50px;
+
+        }
+
+        .center {
+            display: flex;
+            justify-content: center;
+            text-align: center;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <form>
+        <h1>MY CART</h1>
+
+        <!--cake-->
+        <div class="cart">
+            <img src="pics/cake.jpg" class="image">
+            <div class="item">
+                <h3>Chocolate Cake</h3>
+                <p>Eggless 1Kg</p>
+                <p class="rating">Rating: ★★★★★</p>
+            </div>
+            <div class="item-quantity">
+                <label for="quantity1">Qty:</label>
+                <input type="number" id="quantity1" value="1" min="1" style="width: 50px;">
+                <p class="price">Rs.600.00</p>
+            </div>
+        </div>
+
+        <!--chips-->
+        <div class="cart">
+            <img src="pics/chips.jpg" class="image">
+            <div class="item">
+                <h3>Potato Chips</h3>
+                <p>Baked 500gms</p>
+                <p class="rating">Rating: ★★★☆☆</p>
+            </div>
+            <div class="item-quantity">
+                <label for="quantity1">Qty:</label>
+                <input type="number" id="quantity1" value="2" min="1" style="width: 50px;">
+                <p class="price">Rs.120.00</p>
+            </div>
+        </div>
+
+        <!--coke-->
+        <div class="cart">
+            <img src="pics/coke.jpg" class="image">
+            <div class="item">
+                <h3>Coke</h3>
+                <p>Zero Sugar 2ltr</p>
+                <p class="rating">Rating: ★★★★☆</p>
+            </div>
+            <div class="item-quantity">
+                <label for="quantity1">Qty:</label>
+                <input type="number" id="quantity1" value="1" min="1" style="width: 50px;">
+                <p class="price">Rs.120.00</p>
+            </div>
+        </div>
+
+        <!--twix-->
+        <div class="cart">
+            <img src="pics/twix.jpg" class="image">
+            <div class="item">
+                <h3>Twix Bar</h3>
+                <p>Caramel 1pkt</p>
+                <p class="rating">Rating: ★★★★☆</p>
+            </div>
+            <div class="item-quantity">
+                <label for="quantity1">Qty:</label>
+                <input type="number" id="quantity1" value="1" min="1" style="width: 50px;">
+                <p class="price">Rs.160.00</p>
+            </div>
+        </div>
+
+        <!--cart-->
+        <div class="cart">
+            <img src="pics/trol.jpeg" class="image">
+            <div class="item">
+                <h4>Bill Number </h4>
+                <h4>GST </h4>
+                <h2>Total</h2>
+            </div>
+            <div class="item-quantity">
+                <p class="price">180AAS25</p>
+                <p class="price">0.13%</p>
+                <p class="total">Rs.1000.00</p>
+            </div>
+        </div>
+
+        <div class="centre">
+            <a href="buynow.html" class="button">BUY NOW</a>
+        </div>
+
+        <div class="center">
+            <p>
+                Want to add more items?
+                <a href="menu.html">MENU</a>
+            </p>
+        </div>
+
+        </div>
+    </form>
+
+</body>
+
+</html>

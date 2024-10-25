@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment Page </title>
+    <style>
+        /* Additional Styles for Payment Page */
+        body {
+            font-family: 'Arial', sans-serif;
+            background: url(pics/bac.jpg) no-repeat center center/cover;
+            background-size: cover;
+            color: #333;
+            padding: 20px;
+        }
+
+        .container {
+            background: rgba(255, 255, 255, 0.9);
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            max-width: 600px;
+            margin: auto;
+        }
+
+        h2 {
+            text-align: center;
+            margin-bottom: 20px;
+            color: #e74c3c;
+        }
+
+        .amount,
+        .payment-method,
+        .customer-info {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin: 15px 0;
+        }
+
+        .amount h3,
+        .payment-method h3,
+        .customer-info h3 {
+            margin: 0;
+        }
+
+        .payment-options {
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+        }
+
+        .payment-options label {
+            margin-right: 10px;
+        }
+
+        input[type="text"] {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+
+        .login-btn {
+            background-color: #ff6347;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+            width: 50%;
+            position: relative;
+            top: 50%;
+            left: 40%;
+        }
+
+        .login-btn:hover {
+            background-color: #e55342;
+        }
+        p{
+            position: relative;
+            top: 50%;
+            left: 30%;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h2>Payment Details</h2>
+
+        <!-- Total Amount Section -->
+        <div class="amount">
+            <h3>Your Bill is...</h3>
+            <h3>Rs.1000/-</h3>
+        </div>
+        <br>
+        <!-- Payment Method Section -->
+        <div class="payment-method">
+            <h3>Payment Method:</h3>
+            <br>
+            <div class="payment-options">
+                <input type="radio" id="upi" name="payment" value="UPI">
+                <label for="upi">UPI</label>
+                <input type="radio" id="cod" name="payment" value="Cash On Delivery">
+                <label for="cod">Cash On Delivery</label>
+                <input type="radio" id="upi" name="payment" value="UPI">
+                <label for="upi">Wallet</label>
+                <input type="radio" id="upi" name="payment" value="UPI">
+                <label for="upi">Card</label>
+            </div>
+        </div>
+        <br>
+        <!-- Customer Address Section -->
+        <div class="customer-info">
+            <h3>Customer Address:</h3>
+            <input type="text" placeholder="Enter your address" required>
+        </div>
+
+        <!-- Mobile Number Section -->
+        <div class="customer-info">
+            <h3>Mobile Number:</h3>
+            <input type="text" placeholder="Enter your mobile number" required>
+        </div>
+        <br>
+
+        <!-- Pay Now Button -->
+        <a href="exit.html" class="login-btn">PAY NOW</a>
+        <p>Want to add more items?? <a href="menu.html">My Cart</a></p>
+    </div>
+</body>
+
+</html>
